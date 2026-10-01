@@ -1,13 +1,16 @@
 """Make "mounted" copies of the Swordsman sheets with the legs and ground shadow removed.
 
 The horse is drawn behind the rider, so the rider's legs must not show below the
-saddle. Weapon pixels are kept so the glaive is never hidden by the horse.
+saddle. Weapon and cape pixels are kept so they drape over the horse.
 """
 from PIL import Image
 import os
 
+from gen_bow import COLOR_KEYS as BOW
+from gen_cape import COLOR_KEYS as CAPE
+
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Assets", "Sprites", "Swordsman")
-SHEETS = ["Idle", "Attack"]
+SHEETS = ["Idle", "Attack", "Bow_Idle", "Bow_Attack", "Sword_Idle", "Sword_Attack"]
 FRAME = 64
 LEG_ROW = 39          # first row of the legs inside a frame
 HAND_MAX_ROW = 42     # hands gripping the glaive can reach this low
@@ -25,7 +28,7 @@ def keep(rgba, y):
     if y < LEG_ROW:
         return True
     key = "%02x%02x%02x" % rgba[:3]
-    return key in WEAPON or (key in SKIN and y <= HAND_MAX_ROW)
+    return key in WEAPON or key in BOW or key in CAPE or (key in SKIN and y <= HAND_MAX_ROW)
 
 
 def main():

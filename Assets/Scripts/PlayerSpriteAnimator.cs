@@ -35,6 +35,22 @@ public class PlayerSpriteAnimator : MonoBehaviour
     [SerializeField] private DirectionalAnimation mountedIdle = new DirectionalAnimation { fps = 8f };
     [SerializeField] private DirectionalAnimation mountedAttack = new DirectionalAnimation { fps = 16f, loop = false };
 
+    [Header("Bow (Tools/gen_bow.py)")]
+    [SerializeField] private DirectionalAnimation bowIdle = new DirectionalAnimation { fps = 8f };
+    [SerializeField] private DirectionalAnimation bowWalk = new DirectionalAnimation { fps = 10f };
+    [SerializeField] private DirectionalAnimation bowRun = new DirectionalAnimation { fps = 12f };
+    [SerializeField] private DirectionalAnimation bowAttack = new DirectionalAnimation { fps = 12f, loop = false };
+    [SerializeField] private DirectionalAnimation bowMountedIdle = new DirectionalAnimation { fps = 8f };
+    [SerializeField] private DirectionalAnimation bowMountedAttack = new DirectionalAnimation { fps = 12f, loop = false };
+
+    [Header("Sword (Tools/gen_sword.py)")]
+    [SerializeField] private DirectionalAnimation swordIdle = new DirectionalAnimation { fps = 8f };
+    [SerializeField] private DirectionalAnimation swordWalk = new DirectionalAnimation { fps = 10f };
+    [SerializeField] private DirectionalAnimation swordRun = new DirectionalAnimation { fps = 12f };
+    [SerializeField] private DirectionalAnimation swordAttack = new DirectionalAnimation { fps = 16f, loop = false };
+    [SerializeField] private DirectionalAnimation swordMountedIdle = new DirectionalAnimation { fps = 8f };
+    [SerializeField] private DirectionalAnimation swordMountedAttack = new DirectionalAnimation { fps = 16f, loop = false };
+
     private SpriteRenderer spriteRenderer;
     private DirectionalAnimation current;
     private bool wasAttacking;
@@ -52,12 +68,20 @@ public class PlayerSpriteAnimator : MonoBehaviour
     {
         if (controller == null) return;
 
+        var weapon = controller.CurrentWeapon;
+        DirectionalAnimation Pick(DirectionalAnimation glaive, DirectionalAnimation bowAnim, DirectionalAnimation swordAnim) =>
+            weapon == PlayerController.Weapon.Bow ? OrFallback(bowAnim, glaive)
+            : weapon == PlayerController.Weapon.Sword ? OrFallback(swordAnim, glaive)
+            : glaive;
+
         var anim = controller.IsMounted
-                ? (controller.IsAttacking ? OrFallback(mountedAttack, attack) : OrFallback(mountedIdle, idle))
-            : controller.IsAttacking ? attack
-            : !controller.IsMoving ? idle
-            : controller.IsRunning ? run
-            : walk;
+                ? (controller.IsAttacking
+                    ? OrFallback(Pick(mountedAttack, bowMountedAttack, swordMountedAttack), Pick(attack, bowAttack, swordAttack))
+                    : OrFallback(Pick(mountedIdle, bowMountedIdle, swordMountedIdle), Pick(idle, bowIdle, swordIdle)))
+            : controller.IsAttacking ? Pick(attack, bowAttack, swordAttack)
+            : !controller.IsMoving ? Pick(idle, bowIdle, swordIdle)
+            : controller.IsRunning ? Pick(run, bowRun, swordRun)
+            : Pick(walk, bowWalk, swordWalk);
 
         bool attackStarted = controller.IsAttacking && !wasAttacking;
         wasAttacking = controller.IsAttacking;

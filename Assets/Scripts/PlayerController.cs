@@ -10,6 +10,15 @@ public class PlayerController : MonoBehaviour
         Mouse
     }
 
+    public enum Weapon
+    {
+        Glaive,
+        Bow,
+        Sword
+    }
+
+    private const int WeaponCount = 3;
+
     [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private float runSpeed = 7f;
 
@@ -18,7 +27,11 @@ public class PlayerController : MonoBehaviour
 
     [Header("Attack")]
     [SerializeField] private float attackDuration = 0.5f;
+    [SerializeField] private float bowAttackDuration = 0.5f;
     [SerializeField] private float attackMoveMultiplier = 0f;
+
+    [Header("Weapon")]
+    [SerializeField] private Weapon startingWeapon = Weapon.Glaive;
 
     [Header("Horse")]
     [SerializeField] private float mountedMoveSpeed = 6f;
@@ -40,9 +53,11 @@ public class PlayerController : MonoBehaviour
     public bool IsRunning => IsMoving && runHeld;
     public bool IsAttacking => attackTimer > 0f;
     public bool IsMounted { get; private set; }
+    public Weapon CurrentWeapon { get; private set; }
 
     private void Awake()
     {
+        CurrentWeapon = startingWeapon;
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
@@ -67,14 +82,32 @@ public class PlayerController : MonoBehaviour
 
         if (!IsAttacking && MountPressed())
             SetMounted(!IsMounted);
+
+        if (!IsAttacking)
+            ReadWeaponSwitch();
     }
 
     /// <summary>Starts the attack animation/lock. Returns false if an attack is already playing.</summary>
     public bool TryBeginAttack()
     {
         if (IsAttacking) return false;
-        attackTimer = attackDuration;
+        attackTimer = CurrentWeapon == Weapon.Bow ? bowAttackDuration : attackDuration;
         return true;
+    }
+
+    private void ReadWeaponSwitch()
+    {
+        var keyboard = Keyboard.current;
+        var gamepad = Gamepad.current;
+        if (keyboard != null && keyboard.digit1Key.wasPressedThisFrame)
+            CurrentWeapon = Weapon.Glaive;
+        else if (keyboard != null && keyboard.digit2Key.wasPressedThisFrame)
+            CurrentWeapon = Weapon.Bow;
+        else if (keyboard != null && keyboard.digit3Key.wasPressedThisFrame)
+            CurrentWeapon = Weapon.Sword;
+        else if ((keyboard != null && keyboard.cKey.wasPressedThisFrame)
+                 || (gamepad != null && gamepad.dpad.up.wasPressedThisFrame))
+            CurrentWeapon = (Weapon)(((int)CurrentWeapon + 1) % WeaponCount);
     }
 
     private void FixedUpdate()

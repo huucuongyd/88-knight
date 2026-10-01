@@ -1,0 +1,961 @@
+fileFormatVersion: 2
+guid: 41e05e44fcc96110d9011b51903a25b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4392927003755288513
+    second: Swordsman_Sword_Attack_Mounted_0
+  - first:
+      213: -5252399190231816523
+    second: Swordsman_Sword_Attack_Mounted_1
+  - first:
+      213: 4867523740496982503
+    second: Swordsman_Sword_Attack_Mounted_2
+  - first:
+      213: -5126740538796917868
+    second: Swordsman_Sword_Attack_Mounted_3
+  - first:
+      213: 7873968234555296764
+    second: Swordsman_Sword_Attack_Mounted_4
+  - first:
+      213: 925339576279795522
+    second: Swordsman_Sword_Attack_Mounted_5
+  - first:
+      213: -943550394325050303
+    second: Swordsman_Sword_Attack_Mounted_6
+  - first:
+      213: 107240779155997558
+    second: Swordsman_Sword_Attack_Mounted_7
+  - first:
+      213: 1081321977398227225
+    second: Swordsman_Sword_Attack_Mounted_8
+  - first:
+      213: -4284287043605388615
+    second: Swordsman_Sword_Attack_Mounted_9
+  - first:
+      213: 6567087130140371634
+    second: Swordsman_Sword_Attack_Mounted_10
+  - first:
+      213: -451114201655447608
+    second: Swordsman_Sword_Attack_Mounted_11
+  - first:
+      213: 9045021776359978146
+    second: Swordsman_Sword_Attack_Mounted_12
+  - first:
+      213: 3635517204426331978
+    second: Swordsman_Sword_Attack_Mounted_13
+  - first:
+      213: -3755201869605776268
+    second: Swordsman_Sword_Attack_Mounted_14
+  - first:
+      213: 8121295466910656905
+    second: Swordsman_Sword_Attack_Mounted_15
+  - first:
+      213: -3216378069328512917
+    second: Swordsman_Sword_Attack_Mounted_16
+  - first:
+      213: -2938002490571561311
+    second: Swordsman_Sword_Attack_Mounted_17
+  - first:
+      213: 4182779859623408229
+    second: Swordsman_Sword_Attack_Mounted_18
+  - first:
+      213: -7311528097691833759
+    second: Swordsman_Sword_Attack_Mounted_19
+  - first:
+      213: 2632413183414164845
+    second: Swordsman_Sword_Attack_Mounted_20
+  - first:
+      213: 8666297543379439676
+    second: Swordsman_Sword_Attack_Mounted_21
+  - first:
+      213: 6807824557014806470
+    second: Swordsman_Sword_Attack_Mounted_22
+  - first:
+      213: 5310185324382725463
+    second: Swordsman_Sword_Attack_Mounted_23
+  - first:
+      213: 5037393975064564067
+    second: Swordsman_Sword_Attack_Mounted_24
+  - first:
+      213: 2622699778435944574
+    second: Swordsman_Sword_Attack_Mounted_25
+  - first:
+      213: 4952662360022709918
+    second: Swordsman_Sword_Attack_Mounted_26
+  - first:
+      213: 8555126898759957135
+    second: Swordsman_Sword_Attack_Mounted_27
+  - first:
+      213: 1427071049108604144
+    second: Swordsman_Sword_Attack_Mounted_28
+  - first:
+      213: -686692771527158389
+    second: Swordsman_Sword_Attack_Mounted_29
+  - first:
+      213: -3469796932355106319
+    second: Swordsman_Sword_Attack_Mounted_30
+  - first:
+      213: -1238104483930000176
+    second: Swordsman_Sword_Attack_Mounted_31
+  - first:
+      213: 7921758643973449009
+    second: Swordsman_Sword_Attack_Mounted_32
+  - first:
+      213: -8419912600485009206
+    second: Swordsman_Sword_Attack_Mounted_33
+  - first:
+      213: 1392831201645081952
+    second: Swordsman_Sword_Attack_Mounted_34
+  - first:
+      213: -8703975457172013987
+    second: Swordsman_Sword_Attack_Mounted_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e22ac165adc7b86da4660e923637b00
+      internalID: -245538954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1da5036b8e656ed99dadb42707562f
+      internalID: 112823886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af286541e9bc4154094ef98d119f0a10
+      internalID: -1625780182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ae141a00d8ae249aa5675676f48136
+      internalID: -1039356763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04d3adc232c73bdfa8634c077d718da
+      internalID: -1517197130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047e15e7aec921b17bb810c05452dcaa
+      internalID: 63415797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcb75b57fe8d24d6bdf774d0fd03571
+      internalID: -354469537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_down_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9d701f42ba5e943a170122c54c3ada
+      internalID: 84678442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9e5a26722dd7602a02747a27195741
+      internalID: 1947422495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92173d95edc77d1b6ba190f24a0ef479
+      internalID: 2020754642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5197d555b62cef549f53583ab2d1f0d
+      internalID: 1447718088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce549339cb2a70c8eeda5a14c979bf
+      internalID: -409759683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e40adec5134fff0af71e5390893d27
+      internalID: -1637767162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2feed9a8e4ec3cca33aedf88fe7131
+      internalID: -445248960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274b689f6df0d8848b02454e5d8f3984
+      internalID: 1249874726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190fa74877ca9a4aabf0bb1e8c619363
+      internalID: 1609659989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e69495673447bc848a4e45b3358f3b4
+      internalID: 496270155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4190dda84827d7cb5a114ab7f35150cc
+      internalID: 1940180552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20032feaa0e9c49ffb79832aae2c0764
+      internalID: -1740540665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6089d3975e5ec14e6b519f28150fe524
+      internalID: 1371669864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bda637da794604d9a4ae1e93c3177b2
+      internalID: -1652223036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4104e494edd95efa7ab51b4c9b1abc75
+      internalID: 2132110158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b50ebc609e663fe2be7611a005cadba
+      internalID: -960827070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_right_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66e5d73eec4bcb6b8e4839796677b40
+      internalID: -1251178087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32629cc9865a45daf9ae3a61cd2d819a
+      internalID: -2042602975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1053c79e492447ca97abd757acb521
+      internalID: 315504997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3e5b6ce22c036ad9cbde807d7d924c
+      internalID: -1408333098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41febeda5396aed81872488e9a2c9926
+      internalID: 2099477837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a218f09a42658e44b8f0f7896ee0db2
+      internalID: 1661919577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac9deb7da63f1e12885a2e188e5522b
+      internalID: 417623308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc9a35acec777248a2d5de042c1c969
+      internalID: 1443055814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Attack_Mounted_up_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d8237e50d1b5e14bacdbebbfc96b8c
+      internalID: -1567381309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5a4a6edcae1d91288b6a0fbf9b49e7da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Swordsman_Sword_Attack_Mounted_down_0: -245538954
+      Swordsman_Sword_Attack_Mounted_down_1: 112823886
+      Swordsman_Sword_Attack_Mounted_down_2: -1625780182
+      Swordsman_Sword_Attack_Mounted_down_3: -1039356763
+      Swordsman_Sword_Attack_Mounted_down_4: -1517197130
+      Swordsman_Sword_Attack_Mounted_down_5: 63415797
+      Swordsman_Sword_Attack_Mounted_down_6: -354469537
+      Swordsman_Sword_Attack_Mounted_down_7: 84678442
+      Swordsman_Sword_Attack_Mounted_left_0: 1947422495
+      Swordsman_Sword_Attack_Mounted_left_1: 2020754642
+      Swordsman_Sword_Attack_Mounted_left_2: 1447718088
+      Swordsman_Sword_Attack_Mounted_left_3: -409759683
+      Swordsman_Sword_Attack_Mounted_left_4: -1637767162
+      Swordsman_Sword_Attack_Mounted_left_5: -445248960
+      Swordsman_Sword_Attack_Mounted_left_6: 1249874726
+      Swordsman_Sword_Attack_Mounted_left_7: 1609659989
+      Swordsman_Sword_Attack_Mounted_right_0: 496270155
+      Swordsman_Sword_Attack_Mounted_right_1: 1940180552
+      Swordsman_Sword_Attack_Mounted_right_2: -1740540665
+      Swordsman_Sword_Attack_Mounted_right_3: 1371669864
+      Swordsman_Sword_Attack_Mounted_right_4: -1652223036
+      Swordsman_Sword_Attack_Mounted_right_5: 2132110158
+      Swordsman_Sword_Attack_Mounted_right_6: -960827070
+      Swordsman_Sword_Attack_Mounted_right_7: -1251178087
+      Swordsman_Sword_Attack_Mounted_up_0: -2042602975
+      Swordsman_Sword_Attack_Mounted_up_1: 315504997
+      Swordsman_Sword_Attack_Mounted_up_2: -1408333098
+      Swordsman_Sword_Attack_Mounted_up_3: 2099477837
+      Swordsman_Sword_Attack_Mounted_up_4: 1661919577
+      Swordsman_Sword_Attack_Mounted_up_5: 417623308
+      Swordsman_Sword_Attack_Mounted_up_6: 1443055814
+      Swordsman_Sword_Attack_Mounted_up_7: -1567381309
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

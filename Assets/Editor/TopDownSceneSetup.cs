@@ -18,6 +18,12 @@ public static class TopDownSceneSetup
     private const string HorseSpritePrefix = "Horse";
     // Must match how far Tools/gen_horse.py expects the rider to sit above the ground.
     private const int HorseRiderLiftPixels = 9;
+    private const float BowAttackFps = 12f;
+    // Must match Tools/gen_bow.py RELEASE_FRAME (frame where the string is let go).
+    private const int BowReleaseFrame = 4;
+
+    // Walkable area is +-MapHalfSize; walls sit just outside it.
+    private static readonly Vector2 MapHalfSize = new Vector2(16f, 10f);
 
     // Row order in the craftpix sheets, top to bottom.
     private static readonly string[] SheetRows = { "down", "left", "right", "up" };
@@ -59,7 +65,10 @@ public static class TopDownSceneSetup
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
         var controller = GetOrAdd<PlayerController>(player);
-        GetOrAdd<PlayerSkills>(player);
+        var skills = GetOrAdd<PlayerSkills>(player);
+        var skillsSo = new SerializedObject(skills);
+        skillsSo.FindProperty("arrowReleaseDelay").floatValue = BowReleaseFrame / BowAttackFps;
+        skillsSo.ApplyModifiedPropertiesWithoutUndo();
 
         var pivot = player.transform.Find("FacingPivot");
         if (pivot != null) Object.DestroyImmediate(pivot.gameObject);
@@ -85,21 +94,47 @@ public static class TopDownSceneSetup
         AssignAnimation(animSo.FindProperty("attack"), attack, attackFps, false);
         AssignAnimation(animSo.FindProperty("mountedIdle"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Idle_Mounted"), 8f, true);
         AssignAnimation(animSo.FindProperty("mountedAttack"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Attack_Mounted"), attackFps, false);
+
+        var bowAttack = LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Attack");
+        AssignAnimation(animSo.FindProperty("bowIdle"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Idle"), 8f, true);
+        AssignAnimation(animSo.FindProperty("bowWalk"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Walk"), 10f, true);
+        AssignAnimation(animSo.FindProperty("bowRun"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Run"), 12f, true);
+        AssignAnimation(animSo.FindProperty("bowAttack"), bowAttack, BowAttackFps, false);
+        AssignAnimation(animSo.FindProperty("bowMountedIdle"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Idle_Mounted"), 8f, true);
+        AssignAnimation(animSo.FindProperty("bowMountedAttack"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Bow_Attack_Mounted"), BowAttackFps, false);
+
+        AssignAnimation(animSo.FindProperty("swordIdle"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Idle"), 8f, true);
+        AssignAnimation(animSo.FindProperty("swordWalk"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Walk"), 10f, true);
+        AssignAnimation(animSo.FindProperty("swordRun"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Run"), 12f, true);
+        AssignAnimation(animSo.FindProperty("swordAttack"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Attack"), attackFps, false);
+        AssignAnimation(animSo.FindProperty("swordMountedIdle"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Idle_Mounted"), 8f, true);
+        AssignAnimation(animSo.FindProperty("swordMountedAttack"), LoadSheet(PlayerSpriteFolder, PlayerSpritePrefix, "Sword_Attack_Mounted"), attackFps, false);
         animSo.ApplyModifiedPropertiesWithoutUndo();
 
         int attackFrames = attack.TryGetValue("down", out var attackDown) ? attackDown.Length : 8;
+        int bowAttackFrames = bowAttack.TryGetValue("down", out var bowAttackDown) ? bowAttackDown.Length : 6;
         var controllerSo = new SerializedObject(controller);
         controllerSo.FindProperty("attackDuration").floatValue = attackFrames / attackFps;
+        controllerSo.FindProperty("bowAttackDuration").floatValue = bowAttackFrames / BowAttackFps;
         controllerSo.FindProperty("mountedColliderSize").vector2Value = new Vector2(1.2f, 0.4f);
         controllerSo.FindProperty("mountedColliderOffset").vector2Value = new Vector2(0f, -0.5f);
         controllerSo.ApplyModifiedPropertiesWithoutUndo();
 
-        CreateScarecrow(new Vector2(3f, 0f));
+        // Horse and rider sort as one object (Y-sorted against the map props).
+        GetOrAdd<UnityEngine.Rendering.SortingGroup>(player).sortingOrder = TopDownMapSetup.WorldSortingOrderValue;
 
-        CreateWall("Wall_Top", sprite, new Vector2(0, 5), new Vector2(20, 1));
-        CreateWall("Wall_Bottom", sprite, new Vector2(0, -5), new Vector2(20, 1));
-        CreateWall("Wall_Left", sprite, new Vector2(-10, 0), new Vector2(1, 11));
-        CreateWall("Wall_Right", sprite, new Vector2(10, 0), new Vector2(1, 11));
+        var scarecrowPos = new Vector2(3f, 0f);
+        CreateScarecrow(scarecrowPos);
+
+        var h = MapHalfSize;
+        CreateWall("Wall_Top", sprite, new Vector2(0, h.y + 0.5f), new Vector2(h.x * 2 + 2, 1));
+        CreateWall("Wall_Bottom", sprite, new Vector2(0, -h.y - 0.5f), new Vector2(h.x * 2 + 2, 1));
+        CreateWall("Wall_Left", sprite, new Vector2(-h.x - 0.5f, 0), new Vector2(1, h.y * 2 + 2));
+        CreateWall("Wall_Right", sprite, new Vector2(h.x + 0.5f, 0), new Vector2(1, h.y * 2 + 2));
+
+        // Keep the spawn point and the training dummy free of props.
+        var trainingArea = Rect.MinMaxRect(-3f, -2.5f, scarecrowPos.x + 3f, 2.5f);
+        TopDownMapSetup.Build(MapHalfSize, new[] { trainingArea });
 
         var cam = Camera.main;
         if (cam != null)
@@ -153,9 +188,12 @@ public static class TopDownSceneSetup
         importer.filterMode = FilterMode.Point;
         importer.textureCompression = TextureImporterCompression.Uncompressed;
         importer.mipmapEnabled = false;
+        // Pivot (and Visual) raised by SortHeight so the dummy Y-sorts like the Player and map props.
+        importer.GetSourceTextureWidthAndHeight(out _, out int height);
         var settings = new TextureImporterSettings();
         importer.ReadTextureSettings(settings);
-        settings.spriteAlignment = (int)SpriteAlignment.BottomCenter;
+        settings.spriteAlignment = (int)SpriteAlignment.Custom;
+        settings.spritePivot = new Vector2(0.5f, TopDownMapSetup.SortHeight * PlayerPixelsPerUnit / height);
         importer.SetTextureSettings(settings);
         importer.SaveAndReimport();
 
@@ -163,10 +201,11 @@ public static class TopDownSceneSetup
         scarecrow.transform.position = position;
 
         var visual = GetOrCreateChild(scarecrow.transform, "Visual");
-        visual.localPosition = Vector3.zero;
+        visual.localPosition = new Vector3(0f, TopDownMapSetup.SortHeight, 0f);
         var sr = GetOrAdd<SpriteRenderer>(visual.gameObject);
         sr.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(ScarecrowSpritePath);
-        sr.sortingOrder = 1;
+        sr.sortingOrder = TopDownMapSetup.WorldSortingOrderValue;
+        sr.spriteSortPoint = SpriteSortPoint.Pivot;
 
         // Solid base so the player bumps into the pole.
         var solid = GetOrAdd<BoxCollider2D>(scarecrow);
@@ -297,9 +336,11 @@ public static class TopDownSceneSetup
         var wall = GameObject.Find(name) ?? new GameObject(name);
         wall.transform.position = position;
         wall.transform.localScale = new Vector3(size.x, size.y, 1);
+        // Invisible: the border trees of the map show where the edge is.
         var sr = GetOrAdd<SpriteRenderer>(wall);
         sr.sprite = sprite;
         sr.color = new Color(0.35f, 0.35f, 0.35f);
+        sr.enabled = false;
         if (!wall.GetComponent<BoxCollider2D>()) wall.AddComponent<BoxCollider2D>();
     }
 

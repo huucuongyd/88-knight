@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,6 +6,8 @@ using UnityEngine.InputSystem;
 /// <summary>
 /// Space: basic attack. Q: thrust toward the facing direction. W: 60° cone sweep.
 /// E: burst + aura ring that doubles damage while it lasts.
+/// Glaive and sword share these melee attacks. With the bow equipped Space shoots an arrow instead,
+/// and Q/W (melee skills) are unavailable.
 /// Sizes are in sprite pixels (converted with pixelsPerUnit) so they match the pixel art scale.
 /// </summary>
 [RequireComponent(typeof(PlayerController))]
@@ -38,9 +41,19 @@ public class PlayerSkills : MonoBehaviour
     [SerializeField] private int auraBurstDamage = 2;
     [SerializeField] private Color auraColor = new Color(1f, 0.78f, 0.3f, 0.8f);
 
+    [Header("Bow")]
+    [SerializeField] private int arrowDamage = 2;
+    [SerializeField] private float arrowSpeed = 14f;
+    [SerializeField] private float arrowRange = 240f;
+    [Tooltip("Seconds from the start of the shot animation until the arrow leaves the bow.")]
+    [SerializeField] private float arrowReleaseDelay = 0.33f;
+    [Tooltip("Arrow height relative to the player pivot, in pixels (bow is held at chest height).")]
+    [SerializeField] private float arrowHeight = -5f;
+    [SerializeField] private float mountedArrowHeight = 4f;
+
     private PlayerController controller;
     private readonly HashSet<Collider2D> ownColliders = new HashSet<Collider2D>();
-    private Sprite thrustSprite, sweepSprite, auraBurstSprite;
+    private Sprite thrustSprite, sweepSprite, auraBurstSprite, arrowSprite;
     private SpriteRenderer auraRenderer;
     private float thrustReady, sweepReady, auraReady, auraEnd;
 
@@ -62,6 +75,7 @@ public class PlayerSkills : MonoBehaviour
         sweepSprite = SkillSprites.Cone(Mathf.RoundToInt(sweepRadius), sweepAngle, pixelsPerUnit);
         int auraPx = Mathf.RoundToInt(auraRadius);
         auraBurstSprite = SkillSprites.Ring(auraPx, pixelsPerUnit, 0.35f);
+        arrowSprite = SkillSprites.Arrow(pixelsPerUnit);
 
         var aura = new GameObject("DamageAura");
         aura.transform.SetParent(transform, false);
@@ -82,8 +96,21 @@ public class PlayerSkills : MonoBehaviour
         bool q = (keyboard != null && keyboard.qKey.wasPressedThisFrame) || (gamepad != null && gamepad.leftShoulder.wasPressedThisFrame);
         bool w = (keyboard != null && keyboard.wKey.wasPressedThisFrame) || (gamepad != null && gamepad.rightShoulder.wasPressedThisFrame);
         bool e = (keyboard != null && keyboard.eKey.wasPressedThisFrame) || (gamepad != null && gamepad.buttonEast.wasPressedThisFrame);
+        bool bow = controller.CurrentWeapon == PlayerController.Weapon.Bow;
 
-        if (q && Time.time >= thrustReady && controller.TryBeginAttack())
+        if (bow)
+        {
+            if (e && Time.time >= auraReady && controller.TryBeginAttack())
+            {
+                auraReady = Time.time + auraCooldown;
+                CastAura();
+            }
+            else if (basic && controller.TryBeginAttack())
+            {
+                StartCoroutine(ShootArrow(controller.FacingDirection));
+            }
+        }
+        else if (q && Time.time >= thrustReady && controller.TryBeginAttack())
         {
             thrustReady = Time.time + thrustCooldown;
             CastThrust();
@@ -130,6 +157,15 @@ public class PlayerSkills : MonoBehaviour
         var hits = Physics2D.OverlapCircleAll(Origin, ToUnits(sweepRadius));
         Damage(hits, sweepDamage, c => InCone(c, dir, sweepAngle));
         SkillEffect.Spawn(sweepSprite, CurrentEffectColor, Origin, angle, 0.25f, 0.7f);
+    }
+
+    private IEnumerator ShootArrow(Vector2 dir)
+    {
+        yield return new WaitForSeconds(arrowReleaseDelay);
+        float height = ToUnits(controller.IsMounted ? mountedArrowHeight : arrowHeight);
+        var start = Origin + Vector2.up * height + dir * ToUnits(10f);
+        Arrow.Spawn(arrowSprite, AuraActive ? auraColor : Color.white, start, dir, arrowSpeed, ToUnits(arrowRange),
+            Mathf.RoundToInt(arrowDamage * DamageMultiplier), AuraActive, Origin, ownColliders);
     }
 
     private void CastAura()
@@ -242,6 +278,31 @@ public static class SkillSprites
             tex.SetPixel(x, y, new Color(1f, 1f, 1f, alpha));
         }
         return Finish(tex, "Sweep", new Vector2(0.5f / w, (cy + 0.5f) / h), ppu);
+    }
+
+    /// <summary>Arrow pointing along +x, pivot at the tip.</summary>
+    public static Sprite Arrow(float ppu)
+    {
+        var shaft = new Color32(150, 96, 50, 255);
+        var head = new Color32(205, 236, 248, 255);
+        var headDark = new Color32(150, 178, 200, 255);
+        var fletch = new Color32(196, 40, 44, 255);
+        const int w = 13, h = 3;
+        var tex = NewTexture(w, h);
+        for (int x = 2; x < w - 3; x++) tex.SetPixel(x, 1, shaft);
+        tex.SetPixel(w - 1, 1, head);
+        tex.SetPixel(w - 2, 1, head);
+        tex.SetPixel(w - 3, 1, headDark);
+        tex.SetPixel(w - 3, 0, headDark);
+        tex.SetPixel(w - 3, 2, headDark);
+        for (int x = 0; x < 3; x++)
+        {
+            tex.SetPixel(x, 0, fletch);
+            tex.SetPixel(x, 2, fletch);
+        }
+        tex.SetPixel(0, 1, shaft);
+        tex.SetPixel(1, 1, shaft);
+        return Finish(tex, "Arrow", new Vector2(1f, 0.5f), ppu);
     }
 
     public static Sprite Ring(int radius, float ppu, float fillAlpha = 0.35f)

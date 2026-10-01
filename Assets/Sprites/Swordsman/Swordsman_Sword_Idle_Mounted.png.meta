@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: fc6feeacc20be8c4aa6d4010b61d1075
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7215851786555561154
+    second: Swordsman_Sword_Idle_Mounted_0
+  - first:
+      213: -3666916189194494638
+    second: Swordsman_Sword_Idle_Mounted_1
+  - first:
+      213: -2269736798204225751
+    second: Swordsman_Sword_Idle_Mounted_2
+  - first:
+      213: -9077369523184411837
+    second: Swordsman_Sword_Idle_Mounted_3
+  - first:
+      213: -1074864950424334877
+    second: Swordsman_Sword_Idle_Mounted_4
+  - first:
+      213: -2367074095371488428
+    second: Swordsman_Sword_Idle_Mounted_5
+  - first:
+      213: -6265552865103561934
+    second: Swordsman_Sword_Idle_Mounted_6
+  - first:
+      213: -5046287097121705024
+    second: Swordsman_Sword_Idle_Mounted_7
+  - first:
+      213: 3938234980741964796
+    second: Swordsman_Sword_Idle_Mounted_8
+  - first:
+      213: 2483932323778858554
+    second: Swordsman_Sword_Idle_Mounted_9
+  - first:
+      213: 7044470506255819909
+    second: Swordsman_Sword_Idle_Mounted_10
+  - first:
+      213: -2360090812230661837
+    second: Swordsman_Sword_Idle_Mounted_11
+  - first:
+      213: -1673381987880606828
+    second: Swordsman_Sword_Idle_Mounted_12
+  - first:
+      213: -2368001579355323354
+    second: Swordsman_Sword_Idle_Mounted_13
+  - first:
+      213: -7995108101678768147
+    second: Swordsman_Sword_Idle_Mounted_14
+  - first:
+      213: -6792808786755701158
+    second: Swordsman_Sword_Idle_Mounted_15
+  - first:
+      213: 4345023440507783855
+    second: Swordsman_Sword_Idle_Mounted_16
+  - first:
+      213: 5163984039602751842
+    second: Swordsman_Sword_Idle_Mounted_17
+  - first:
+      213: -1661478206749564812
+    second: Swordsman_Sword_Idle_Mounted_18
+  - first:
+      213: 2272143214564775520
+    second: Swordsman_Sword_Idle_Mounted_19
+  - first:
+      213: -8996869175274839921
+    second: Swordsman_Sword_Idle_Mounted_20
+  - first:
+      213: -7719875342487185554
+    second: Swordsman_Sword_Idle_Mounted_21
+  - first:
+      213: -8532750534770557955
+    second: Swordsman_Sword_Idle_Mounted_22
+  - first:
+      213: 7119742009942706232
+    second: Swordsman_Sword_Idle_Mounted_23
+  - first:
+      213: 4962622718955876972
+    second: Swordsman_Sword_Idle_Mounted_24
+  - first:
+      213: -164421872659853016
+    second: Swordsman_Sword_Idle_Mounted_25
+  - first:
+      213: -2558288825154937423
+    second: Swordsman_Sword_Idle_Mounted_26
+  - first:
+      213: 4069780229725654243
+    second: Swordsman_Sword_Idle_Mounted_27
+  - first:
+      213: 250817531672882637
+    second: Swordsman_Sword_Idle_Mounted_28
+  - first:
+      213: 4380389014432446523
+    second: Swordsman_Sword_Idle_Mounted_29
+  - first:
+      213: -8936125369692913464
+    second: Swordsman_Sword_Idle_Mounted_30
+  - first:
+      213: -828900438298195537
+    second: Swordsman_Sword_Idle_Mounted_31
+  - first:
+      213: 2840626972551669700
+    second: Swordsman_Sword_Idle_Mounted_32
+  - first:
+      213: -8094367262564653096
+    second: Swordsman_Sword_Idle_Mounted_33
+  - first:
+      213: -8289272041434918904
+    second: Swordsman_Sword_Idle_Mounted_34
+  - first:
+      213: -5603103851525309459
+    second: Swordsman_Sword_Idle_Mounted_35
+  - first:
+      213: -376373359717184188
+    second: Swordsman_Sword_Idle_Mounted_36
+  - first:
+      213: -6618502591534180038
+    second: Swordsman_Sword_Idle_Mounted_37
+  - first:
+      213: -7382881176653428530
+    second: Swordsman_Sword_Idle_Mounted_38
+  - first:
+      213: -7418806745915170733
+    second: Swordsman_Sword_Idle_Mounted_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e92e6f8c3b8ea7fb6749ef165bc2cf
+      internalID: 1684836194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0077dde10e1f49123ac5eec726960f5e
+      internalID: -470632199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7606016bf8df69e86dcf89a07012ef
+      internalID: 1375729398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a7f6dee78d59794a027a9ed43784f1
+      internalID: -106333384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45763698e280c00bb88ba70625d74fc3
+      internalID: 1140217853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ef3eaec4c2ae71b19dabcb3b7c245
+      internalID: -1756170810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df070650b204c8d62b6790acba93bcdf
+      internalID: -1783849825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7795a2bf123d8a4f0a193957858f131d
+      internalID: 559818355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2e9787d170afac3b5990322fa54ad7
+      internalID: 736864285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c099d7ac1bda5a0db9c1c6fbe82b040e
+      internalID: -464046928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e3d6cd3716eb3e9a57b4e40056810
+      internalID: 2062262826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_down_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aef185cf14b4351a0847d0b37f14e3
+      internalID: 994666280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccb8a994aa45e09193af3932e376f80
+      internalID: 2014713838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0e464dea02e6e69972b8aa94839511
+      internalID: -1149247903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09d9c2e9aefdbdf8a9b9fe0e835ab6d
+      internalID: 971974122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1e71a73a01d486bb6dcbba1e6ce9fa
+      internalID: -356944665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfad34a6e171b8a6ab91bc72caa7b3e7
+      internalID: 1892540428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3dbda06060ad83ea8c5a74ce43ee2e
+      internalID: 1287387511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed9c7639174e7ed08407f7b68f0d242
+      internalID: 90555451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8453c66f312e60ad79c28d5d59855c99
+      internalID: -1984166665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098f49e0b259f63e581a7c7f8de45744
+      internalID: -1491641131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe6c8de9e875d27fb232d8b338af365
+      internalID: -1177748592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5c848d40cf38101877be82f9c3e338
+      internalID: 852921140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_left_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f26cd19239bb300abbf9078eba7320
+      internalID: -533313898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08077ae26ac8a51f69b659c7707e243c
+      internalID: -380565899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ca476db453e63fba930742d389ed0f
+      internalID: -197118866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2cdb38cbb7bf10981a5e4a85adef0a
+      internalID: 559297340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ec93dc08a65c7189865ae9e8d4fd8c
+      internalID: 472576590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53d59bc3c13837f49268624a64e9e07
+      internalID: 1809275322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ee3851d7373032b89ce722ad3bb8d1
+      internalID: 1976389229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a949377129593df22b5333bfd6c566bb
+      internalID: -1655982503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8da303f44a6f386af8a01ee5226086
+      internalID: 2127335432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3fc1e81faeef8b7b1383d0c56f5745
+      internalID: -1058692803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8868d9d38aa4b72799e740eb398b8354
+      internalID: -1878455646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fd0449059e6cc37acafa1a1e463d12
+      internalID: -948489176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_right_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4daf3b8e72d78b4986d64641cf32ed
+      internalID: -600586598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc191bb63e2a0aeba6d825e6455a242
+      internalID: 1179797328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_up_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d266a7598d866ce0a3885f48ef6ea93
+      internalID: -1408196608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_up_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c21a7d5126d8a587b4026e0c3bf9f44
+      internalID: -864152659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman_Sword_Idle_Mounted_up_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1899cfa3c24a0cad3f1418c404bf9
+      internalID: -1518771739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 04fe81ba42a0d014a817279bb4cbedc8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Swordsman_Sword_Idle_Mounted_down_0: 1684836194
+      Swordsman_Sword_Idle_Mounted_down_1: -470632199
+      Swordsman_Sword_Idle_Mounted_down_10: 2062262826
+      Swordsman_Sword_Idle_Mounted_down_11: 994666280
+      Swordsman_Sword_Idle_Mounted_down_2: 1375729398
+      Swordsman_Sword_Idle_Mounted_down_3: -106333384
+      Swordsman_Sword_Idle_Mounted_down_4: 1140217853
+      Swordsman_Sword_Idle_Mounted_down_5: -1756170810
+      Swordsman_Sword_Idle_Mounted_down_6: -1783849825
+      Swordsman_Sword_Idle_Mounted_down_7: 559818355
+      Swordsman_Sword_Idle_Mounted_down_8: 736864285
+      Swordsman_Sword_Idle_Mounted_down_9: -464046928
+      Swordsman_Sword_Idle_Mounted_left_0: 2014713838
+      Swordsman_Sword_Idle_Mounted_left_1: -1149247903
+      Swordsman_Sword_Idle_Mounted_left_10: 852921140
+      Swordsman_Sword_Idle_Mounted_left_11: -533313898
+      Swordsman_Sword_Idle_Mounted_left_2: 971974122
+      Swordsman_Sword_Idle_Mounted_left_3: -356944665
+      Swordsman_Sword_Idle_Mounted_left_4: 1892540428
+      Swordsman_Sword_Idle_Mounted_left_5: 1287387511
+      Swordsman_Sword_Idle_Mounted_left_6: 90555451
+      Swordsman_Sword_Idle_Mounted_left_7: -1984166665
+      Swordsman_Sword_Idle_Mounted_left_8: -1491641131
+      Swordsman_Sword_Idle_Mounted_left_9: -1177748592
+      Swordsman_Sword_Idle_Mounted_right_0: -380565899
+      Swordsman_Sword_Idle_Mounted_right_1: -197118866
+      Swordsman_Sword_Idle_Mounted_right_10: -948489176
+      Swordsman_Sword_Idle_Mounted_right_11: -600586598
+      Swordsman_Sword_Idle_Mounted_right_2: 559297340
+      Swordsman_Sword_Idle_Mounted_right_3: 472576590
+      Swordsman_Sword_Idle_Mounted_right_4: 1809275322
+      Swordsman_Sword_Idle_Mounted_right_5: 1976389229
+      Swordsman_Sword_Idle_Mounted_right_6: -1655982503
+      Swordsman_Sword_Idle_Mounted_right_7: 2127335432
+      Swordsman_Sword_Idle_Mounted_right_8: -1058692803
+      Swordsman_Sword_Idle_Mounted_right_9: -1878455646
+      Swordsman_Sword_Idle_Mounted_up_0: 1179797328
+      Swordsman_Sword_Idle_Mounted_up_1: -1408196608
+      Swordsman_Sword_Idle_Mounted_up_2: -864152659
+      Swordsman_Sword_Idle_Mounted_up_3: -1518771739
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

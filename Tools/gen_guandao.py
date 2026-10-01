@@ -1,4 +1,4 @@
-"""Replace the Swordsman lvl3 sword with a long wooden-handled guandao.
+"""Replace the Swordsman lvl3 sword with a long wooden-handled guandao and add a cape (gen_cape.py).
 
 Reads the layered parts from the craftpix pack and writes recomposed sheets to
 Assets/Sprites/Swordsman/Swordsman_{Idle,Walk,Run,Attack}.png.
@@ -6,6 +6,8 @@ Assets/Sprites/Swordsman/Swordsman_{Idle,Walk,Run,Attack}.png.
 import math
 import os
 from PIL import Image
+
+import gen_cape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARTS = os.path.join(ROOT, "craftpix-net-180537-free-swordsman-1-3-level-pixel-top-down-sprite-character",
@@ -146,7 +148,33 @@ def build_weapon(grip, d, body_center):
     return {p: c for p, c in outlined.items() if 0 <= p[0] < F and 0 <= p[1] < F}
 
 
-def process(anim_key):
+def glaive_parts(grip, d, body_center):
+    """Splits the glaive into (held under the hand, rest of the weapon)."""
+    under, rest = {}, {}
+    for p, c in build_weapon(grip, d, body_center).items():
+        along = (p[0] - grip[0]) * d[0] + (p[1] - grip[1]) * d[1]
+        (under if along <= HAND_RADIUS else rest)[p] = c
+    return under, rest
+
+
+def compose(groups):
+    frame = Image.new("RGBA", (F, F))
+    for group in groups:
+        for (x, y), c in group.items():
+            if c[3] == 255:
+                frame.putpixel((x, y), c)
+            else:
+                base = frame.getpixel((x, y))
+                a = c[3] / 255
+                if base[3] == 0:
+                    frame.putpixel((x, y), c)
+                else:
+                    frame.putpixel((x, y), tuple(int(c[i] * a + base[i] * (1 - a)) for i in range(3)) + (255,))
+    return frame
+
+
+def process(anim_key, parts=glaive_parts, prefix="Swordsman", keep_unmatched_sword=True):
+    """parts(grip, d, body_center) -> (under_hand, rest) builds the weapon held at the sword's grip."""
     src = ANIMS[anim_key]
     layers = {name: load(f"{src}_{name}") for name in ("shadow", "sword_back", "body", "head", "sword", "swing")}
     width = max(img.width for img in layers.values() if img is not None)
@@ -154,8 +182,10 @@ def process(anim_key):
     sheet = Image.new("RGBA", (width, height))
 
     for cy in range(height // F):
+        frame_count = sum(1 for cx in range(width // F) if frame_pixels(layers["body"], cx, cy))
         for cx in range(width // F):
             px = {name: frame_pixels(img, cx, cy) for name, img in layers.items()}
+            cape_back, cape_over = gen_cape.build(anim_key, cy, cx, frame_count, px["head"])
             front_steel = [p for p, c in px["sword"].items() if c[:3] in STEEL]
             back_steel = [p for p, c in px["sword_back"].items() if c[:3] in STEEL]
             weapon_layer = "sword" if len(front_steel) >= len(back_steel) else "sword_back"
@@ -182,36 +212,22 @@ def process(anim_key):
                 d = ((tip[0] - hand_end[0]) / length, (tip[1] - hand_end[1]) / length)
                 grip = (hand_end[0] - d[0] * 1.5, hand_end[1] - d[1] * 1.5)
 
-                for p, c in build_weapon(grip, d, body_center).items():
-                    along = (p[0] - grip[0]) * d[0] + (p[1] - grip[1]) * d[1]
-                    if along <= HAND_RADIUS:
-                        under_body[p] = c
-                    elif weapon_layer == "sword":
-                        weapon_front[p] = c
-                    else:
-                        weapon_back[p] = c
-            else:
+                under_body, rest = parts(grip, d, body_center)
+                if weapon_layer == "sword":
+                    weapon_front = rest
+                else:
+                    weapon_back = rest
+            elif keep_unmatched_sword:
                 for name, target in (("sword", weapon_front), ("sword_back", weapon_back)):
                     for p, c in px[name].items():
                         target[p] = c
 
-            frame = Image.new("RGBA", (F, F))
-            for group in (px["shadow"], weapon_back, under_body, px["body"], px["head"],
-                          weapon_front, leftovers, px["swing"]):
-                for (x, y), c in group.items():
-                    if c[3] == 255:
-                        frame.putpixel((x, y), c)
-                    else:
-                        base = frame.getpixel((x, y))
-                        a = c[3] / 255
-                        if base[3] == 0:
-                            frame.putpixel((x, y), c)
-                        else:
-                            frame.putpixel((x, y), tuple(int(c[i] * a + base[i] * (1 - a)) for i in range(3)) + (255,))
+            frame = compose((px["shadow"], cape_back, weapon_back, under_body, px["body"], cape_over, px["head"],
+                             weapon_front, leftovers, px["swing"]))
             sheet.paste(frame, (cx * F, cy * F))
 
     os.makedirs(OUT, exist_ok=True)
-    out_path = os.path.join(OUT, f"Swordsman_{anim_key}.png")
+    out_path = os.path.join(OUT, f"{prefix}_{anim_key}.png")
     sheet.save(out_path)
     return out_path, sheet
 
